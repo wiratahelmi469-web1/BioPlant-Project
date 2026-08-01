@@ -12,12 +12,12 @@ const links: LinkItem[] = [
   },
   {
     title: "Chat WhatsApp",
-    url: "https://wa.me/6285813095675",
+    url: "https://wa.me/6285286197108",
     icon: "/icons/whatsapp.webp",
   },
   {
     title: "TikTok",
-    url: "https://www.tiktok.com/@username",
+    url: "https://vt.tiktok.com/ZS4kK6uDe/?page=Mall",
     icon: "/icons/tiktok.png",
   },
   {
