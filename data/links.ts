@@ -22,7 +22,7 @@ const links: LinkItem[] = [
   },
   {
     title: "Tokopedia",
-    url: "https://www.tokopedia.com/username_toko",
+    url: "https://tk.tokopedia.com/ZS4kEeUdj/",
     icon: "/icons/tokopedia.png",
   },
 ];
