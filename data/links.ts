@@ -1,27 +1,30 @@
-export const links = [
+export interface LinkItem {
+  title: string;
+  subtitle?: string;
+  url: string;
+  icon?: string;
+}
+
+const links: LinkItem[] = [
   {
-    title: "Shopee",
-    subtitle: "Belanja Sekarang",
-    url: "https://shopee.co.id/username_toko",
+    title: "Our Profile",
+    url: "https://Our-profile-kamu.com",
   },
   {
-    title: "Tokopedia",
-    subtitle: "Lihat Katalog",
-    url: "https://www.tokopedia.com/username_toko",
-  },
-  {
-    title: "WhatsApp",
-    subtitle: "Chat Admin",
+    title: "Chat WhatsApp",
     url: "https://wa.me/6285813095675",
-  },
-  {
-    title: "Instagram",
-    subtitle: "Follow Kami",
-    url: "https://instagram.com/digebuygebuyy?igsh=Y2UbDA4OWdjdNy",
+    icon: "/icons/whatsapp.webp",
   },
   {
     title: "TikTok",
-    subtitle: "Video Tanaman",
     url: "https://www.tiktok.com/@username",
+    icon: "/icons/tiktok.png",
+  },
+  {
+    title: "Tokopedia",
+    url: "https://www.tokopedia.com/username_toko",
+    icon: "/icons/tokopedia.png",
   },
 ];
+
+export default links;

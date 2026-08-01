@@ -1,72 +1,44 @@
 import Image from "next/image";
 
+import { LinkCard } from "./LinkCard";
+import links from "@/data/links";
+
 export default function Hero() {
   return (
-    <section className="text-center">
+    <section className="w-full max-w-md mx-auto text-center">
+      {/* Profile */}
+      <div className="flex flex-col items-center">
+        <Image
+          src="/icons/bioplant.jpeg"
+          alt="BioPlant Project"
+          width={110}
+          height={110}
+          priority
+          className="rounded-full border-4 border-white/30 shadow-2xl object-cover"
+        />
 
-      <span
-        className="
-        inline-flex
-        rounded-full
-        border
-        border-green-700
-        bg-green-100
-        px-4
-        py-1
-        text-xs
-        font-semibold
-        tracking-widest
-        text-green-700
-        "
-      >
-        READY STOCK
-      </span>
+        <h1 className="mt-6 text-4xl font-bold text-white">BioPlant Project</h1>
 
-      <Image
-        src="/logo.png"
-        alt="GreenLeaf"
-        width={100}
-        height={100}
-        className="
-        mx-auto
-        mt-8
-        rounded-full
-        border-2
-        border-neutral-800
-        object-cover
-        shadow-md
-        "
-      />
+        <p className="mt-2 text-white/80">Bogor, Indonesia</p>
+      </div>
 
-      <h1
-        className="
-        mt-6
-        font-heading
-        text-3xl
-        font-bold
-        sm:text-4xl
-        "
-      >
-        GreenLeaf Studio
-      </h1>
+      {/* Link List */}
+      <div className="mt-10 space-y-5">
+        {links.map((link) => (
+          <LinkCard
+            key={link.title}
+            title={link.title}
+            subtitle={link.subtitle}
+            url={link.url}
+            icon={link.icon}
+          />
+        ))}
+      </div>
 
-      <p
-        className="
-        mx-auto
-        mt-4
-        max-w-xs
-        text-sm
-        leading-7
-        text-neutral-600
-        sm:max-w-sm
-        sm:text-base
-        "
-      >
-        Tanaman hias pilihan untuk
-        mempercantik rumah, kantor,
-        dan ruang favoritmu.
-      </p>
-
+      {/* Footer */}
+      <footer className="mt-14 text-sm text-white/70">
+        Bogor, Indonesia
+      </footer>
     </section>
   );
 }
