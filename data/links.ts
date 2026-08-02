@@ -8,7 +8,7 @@ export interface LinkItem {
 const links: LinkItem[] = [
   {
     title: "Our Profile",
-    url: "https://Our-profile-kamu.com",
+    url: "https://our-company-seven.vercel.app/",
   },
   {
     title: "Chat WhatsApp",
