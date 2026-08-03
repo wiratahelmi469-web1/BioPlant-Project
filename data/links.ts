@@ -13,7 +13,7 @@ const links: LinkItem[] = [
   {
     title: "Chat WhatsApp",
     url: "https://wa.me/6285286197108",
-    icon: "/icons/whatsapp.webp",
+    icon: "/icons/wa.png",
   },
   {
     title: "TikTok",
