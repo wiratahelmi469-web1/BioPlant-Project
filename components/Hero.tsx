@@ -37,7 +37,7 @@ export default function Hero() {
 
       {/* Footer */}
       <footer className="mt-14 text-sm text-white/70">
-        Bogor, Indonesia
+        © 2026 BioPlant Project. All Rights Reserved.
       </footer>
     </section>
   );
