@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { LinkCard } from "./LinkCard";
+import LinkCard from "./LinkCard";
 import links from "@/data/links";
 
 export default function Hero() {
