@@ -1,8 +1,11 @@
 export interface LinkItem {
   title: string;
-  subtitle?: string;
-  url: string;
+  url?: string;
   icon?: string;
+  children?: {
+    title: string;
+    url: string;
+  }[];
 }
 
 const links: LinkItem[] = [
@@ -17,13 +20,47 @@ const links: LinkItem[] = [
   },
   {
     title: "TikTok",
-    url: "https://vt.tiktok.com/ZS4kK6uDe/?page=Mall",
     icon: "/icons/tiktok.png",
+    children: [
+      {
+        title: "BioPlant Official",
+        url: "https://tiktok.com/@akun1",
+      },
+      {
+        title: "BioPlant Garden",
+        url: "https://tiktok.com/@akun2",
+      },
+      {
+        title: "BioPlant Project",
+        url: "https://tiktok.com/@akun3",
+      },
+      {
+        title: "BioPlant Nursery",
+        url: "https://tiktok.com/@akun4",
+      },
+    ],
   },
   {
     title: "Tokopedia",
-    url: "https://tk.tokopedia.com/ZS4kEeUdj/",
     icon: "/icons/tokopedia.png",
+    children: [
+      {
+        title: "Official Store",
+        url: "#",
+      },
+      {
+        title: "Tanaman Hias",
+        url: "#",
+      },
+      {
+        title: "Pot & Media",
+        url: "#",
+      },
+      {
+        title: "Project",
+        url: "#",
+      },
+    ],
   },
 ];
 

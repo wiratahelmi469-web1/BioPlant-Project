@@ -5,7 +5,7 @@ import links from "@/data/links";
 
 export default function Hero() {
   return (
-    <section className="w-full max-w-md mx-auto text-center">
+    <section className="w-full max-w-md mx-auto pt-10 text-center">
       {/* Profile */}
       <div className="flex flex-col items-center">
         <Image
@@ -28,9 +28,9 @@ export default function Hero() {
           <LinkCard
             key={link.title}
             title={link.title}
-            subtitle={link.subtitle}
             url={link.url}
             icon={link.icon}
+            children={link.children}
           />
         ))}
       </div>

@@ -11,7 +11,7 @@ export default function Home() {
       <div className="fixed inset-0 bg-black/45 backdrop-blur-[2px] -z-10" />
 
       {/* Main Content */}
-      <main className="relative z-10 flex min-h-screen items-center justify-center px-5 py-10">
+      <main className="relative z-10 flex min-h-screen justify-center px-5 py-10">
         <Hero />
       </main>
     </>
