@@ -1,7 +1,6 @@
 export interface LinkItem {
   title: string;
   url?: string;
-  icon?: string;
   children?: {
     title: string;
     url: string;
@@ -16,11 +15,9 @@ const links: LinkItem[] = [
   {
     title: "Chat WhatsApp",
     url: "https://wa.me/6285286197108",
-    icon: "/icons/wa.png",
   },
   {
     title: "TikTok",
-    icon: "/icons/tiktok.png",
     children: [
       {
         title: "BioPlant Official",
@@ -42,7 +39,6 @@ const links: LinkItem[] = [
   },
   {
     title: "Tokopedia",
-    icon: "/icons/tokopedia.png",
     children: [
       {
         title: "Official Store",

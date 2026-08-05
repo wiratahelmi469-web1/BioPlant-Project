@@ -5,7 +5,7 @@ import links from "@/data/links";
 
 export default function Hero() {
   return (
-    <section className="w-full max-w-md mx-auto pt-10 text-center">
+    <section className="mx-auto w-full max-w-md pt-10 text-center">
       {/* Profile */}
       <div className="flex flex-col items-center">
         <Image
@@ -14,12 +14,16 @@ export default function Hero() {
           width={110}
           height={110}
           priority
-          className="rounded-full border-4 border-white/30 shadow-2xl object-cover"
+          className="rounded-full border-4 border-white/30 object-cover shadow-2xl"
         />
 
-        <h1 className="mt-6 text-4xl font-bold text-white">BioPlant Project</h1>
+        <h1 className="mt-6 text-4xl font-bold text-white">
+          BioPlant Project
+        </h1>
 
-        <p className="mt-2 text-white/80">Bogor, Indonesia</p>
+        <p className="mt-2 text-white/80">
+          Bogor, Indonesia
+        </p>
       </div>
 
       {/* Link List */}
@@ -29,7 +33,6 @@ export default function Hero() {
             key={link.title}
             title={link.title}
             url={link.url}
-            icon={link.icon}
             children={link.children}
           />
         ))}

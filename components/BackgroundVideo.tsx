@@ -7,7 +7,7 @@ export default function BackgroundVideo() {
       playsInline
       className="fixed inset-0 h-full w-full object-cover"
     >
-      <source src="/video/background.mp4" type="video/mp4" />
+      <source src="/video/bg3.MOV" type="video/mp4" />
     </video>
   );
 }
