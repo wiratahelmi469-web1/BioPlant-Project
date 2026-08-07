@@ -9,8 +9,8 @@ export default function Hero() {
       {/* Profile */}
       <div className="flex flex-col items-center">
         <Image
-          src="/icons/bioplant.jpeg"
-          alt="BioPlant Project"
+          src="/icons/greenovative.jpg"
+          alt="Greenovative"
           width={110}
           height={110}
           priority
@@ -18,7 +18,7 @@ export default function Hero() {
         />
 
         <h1 className="mt-6 text-4xl font-bold text-white">
-          BioPlant Project
+          Greenovative
         </h1>
 
         <p className="mt-2 text-white/80">
@@ -40,7 +40,7 @@ export default function Hero() {
 
       {/* Footer */}
       <footer className="mt-14 text-sm text-white/70">
-        © 2026 BioPlant Project. All Rights Reserved.
+        © 2026 Greenovative. All Rights Reserved.
       </footer>
     </section>
   );
